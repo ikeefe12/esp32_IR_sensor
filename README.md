@@ -9,7 +9,7 @@ The ESP32 board will connect to Capstone Router with IP_ADDRESS = 192.168.0.120 
 
 In order to recieve data from the ESP32 Board follow these steps (code is in Python):
 
-1) Connect to socket
+1) Connect to socket - ESP32 MUST HAVE blue flashing light before this step indicating it is connected to WiFi
     `client_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM);
     client_socket.connect((IP_ADDRESS, PORT_NUMBER))`
 
