@@ -26,5 +26,5 @@ In order to recieve data from the ESP32 Board follow these steps (code is in Pyt
 5) Whenever you want the most recent data from the ESP32 board, send a trigger for the next frame:
     `client_socket.send(b"N")`
     
-6) To recieve the frame, read 21 packets of size 760 from the socket. In depth example code can be found at this link 
+6) To recieve the frame, read 21 packets of size 761 from the socket. The first byte of each packet is the packet number, this can be discarded unless we start seeing packages come in out of order. In depth example code can be found at this link ()
 
