@@ -10,8 +10,8 @@ The ESP32 board will connect to Capstone Router with IP_ADDRESS = 192.168.0.120 
 In order to recieve data from the ESP32 Board follow these steps (code is in Python):
 
 1) Connect to socket
-    client_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    client_socket.connect((IP_ADDRESS, PORT_NUMBER))
+    `client_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    client_socket.connect((IP_ADDRESS, PORT_NUMBER))`
 
 2) Send a request to bind to device:
     client_socket.send(b"Bind HTPA series device")
